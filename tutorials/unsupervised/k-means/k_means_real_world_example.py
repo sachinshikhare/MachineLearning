@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans
 from sklearn import preprocessing, cross_validation
 import pandas as pd
 
-df = pd.read_excel("D:\\IMP\\ML\\Test DataSet\\titanic.xls")
+df = pd.read_excel("../../data/titanic.xls")
 
 df.drop(['body','name'], 1, inplace=True)
 df.convert_objects(convert_numeric=True)
